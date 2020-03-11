@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>스타벅스 관리자</title>
+<link rel="stylesheet" href="../resources/css/default.css" />
+<!--[if lt IE 9]>
+<script src="../resources/js/html5shiv.js"></script>
+<![endif]-->
+<script src="../resources/js/jquery-1.11.2.min.js"></script>
+<script src="../resources/js/design.js"></script>
+
+</head>
+<body>
+<section id="container">
+	<header>
+		<h1><a href=""><img src="../resources/img/Logo2.png" alt="" /></a></h1>
+		<p><b>정화영</b>님, 반갑습니다! <a href="javascript:FuncLogout();">로그아웃</a><a href="../login/password_expire.asp">비밀번호 변경</a></p>
+		
+		<ul id="gnb">
+			<li><a href="">서비스운영</a></li>
+			<li><a href="">직원관리</a></li>
+			<li><a href="">품목관리</a></li>
+			<li><a href="">프로모션이벤트</a></li>
+			<li><a href="">통계</a></li>
+			<li><a href="">시스템운영</a></li>
+		</ul>
+	</header>
+
+
+<nav>
+	<h2><b>직원관리</b></h2>
+	<ul id="lnb">
+		<li><a href="">직원</a>
+			<ul>
+				<li><a href="">우수사원</a></li>
+				<li><a href="">이달의사원</a></li>
+			</ul>
+		</li>
+		<li><a href="">매장</a></li>
+	</ul>	
+</nav>
+
+<section id="contents" >
+
+	<hgroup>
+		<h3></h3>
+		<p><a href="">HOME</a></p>
+	</hgroup>
+
+	
+	<script>
+		var gnbDep1 = 2;//상단메뉴
+		var lnbDep1 = 1;//서브메뉴
+		var lnbDep2 = 1;//서브의서브메뉴
+		var lnbDep3 = 0;
+		var title = 0;
+	
+	</script>
+
+	<article >
+		<form>
+		<fieldset class="search_box">
+			
+			<div class="search_lable"><label>이름 : </label></div>
+			<div class="search_input"><input type="text" class="txt"  value=""  /></div>
+			<div class="search_btn"><a href="" class="btn_search">검색</a></div>
+				
+		</fieldset>
+		</form>
+
+		<div class="sort_area">
+			<select id="" onchange="">
+				<option value="20" selected="selected">20개씩</option>
+				<option value="50">50개씩</option>
+				<option value="-1">전체</option>
+			</select>
+		</div>
+
+		<p class="btns_top">
+			<span class="total">총 <b>2</b> 명의 직원이 등록 되었습니다.</span>
+		</p>
+
+		<div class="table_wrap">
+			<table class="listTable">
+				<colgroup><col width="50px" /><col width="100px" /><col width="*" /><col width="*" /><col width="*" /><col width="8*" /><col width="90px" /></colgroup>
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>사번</th>
+						<th>지접</th>
+						<th>이름</th>
+						<th>직급</th>
+						<th>계약기간</th>
+						<th>상태</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr >
+						<td colspan="7" >등록된 직원이 없습니다.</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>sb0007</td>
+						<td><i>서울 강남점</i></td>
+						<td>강하늘</td>
+						<td class="green_m">매니저</td>
+						<td>2018.01.01~2019.12.31</td>
+						<td>재직</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>sb0007</td>
+						<td>수원 영통점</td>
+						<td>김하늬</td>
+						<td>아르바이트</td>
+						<td>2018.01.01~2018.03.31</td>
+						<td class="bye">퇴사</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!--table_wrap-->
+
+		<p class="btn_r">
+			<a href="event_write.html" class="green">등록</a>
+		</p>
+
+		<p class="pagination" id="">
+			<a href=""><img src="../resources/img/btn/paging1.png" alt="맨뒤" /></a>
+            <a href=""><img src="../resources/img/btn/paging2.png" alt="이전" /></a>
+            <span>
+                <a href="" class="on">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+            </span>
+            <a href=""><img src="../resources/img/btn/paging3.png" alt="다음" /></a>
+            <a href=""><img src="../resources/img/btn/paging4.png" alt="맨앞" /></a>
+		</p>
+	</article>
+</section>
+
+</section>
+<footer>
+	<address>Copyright 2018. starbucks All Rights Reserved.</address>
+</footer>
+
+</body>
+</html>

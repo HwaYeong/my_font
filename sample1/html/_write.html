@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>스타벅스 관리자</title>
+<link rel="stylesheet" href="../resources/css/default.css" />
+<!--[if lt IE 9]>
+<script src="../resources/js/html5shiv.js"></script>
+<![endif]-->
+<script src="../resources/js/jquery-1.11.2.min.js"></script>
+<script src="../resources/js/design.js"></script>
+
+</head>
+<body>
+<section id="container">
+	<header>
+		<h1><a href=""><img src="../resources/img/Logo2.png" alt="" /></a></h1>
+		<p><b>정화영</b>님, 반갑습니다! <a href="javascript:FuncLogout();">로그아웃</a><a href="../login/password_expire.asp">비밀번호 변경</a></p>
+		
+		<ul id="gnb">
+			<li><a href="">서비스운영</a></li>
+			<li><a href="">직원관리</a></li>
+			<li><a href="">품목관리</a></li>
+			<li><a href="">프로모션이벤트</a></li>
+			<li><a href="">통계</a></li>
+			<li><a href="">시스템운영</a></li>
+		</ul>
+	</header>
+
+
+<nav>
+	<h2><b>직원관리</b></h2>
+	<ul id="lnb">
+		<li><a href="">직원</a>
+			<ul>
+				<li><a href="">우수사원</a></li>
+				<li><a href="">이달의사원</a></li>
+			</ul>
+		</li>
+		<li><a href="">매장</a></li>
+	</ul>	
+</nav>
+
+<section id="contents" >
+
+	<hgroup>
+		<h3></h3>
+		<p><a href="">HOME</a></p>
+	</hgroup>
+
+	
+	<script>
+		var gnbDep1 = 2;//상단메뉴
+		var lnbDep1 = 1;//서브메뉴
+		var lnbDep2 = 1;//서브의서브메뉴
+		var lnbDep3 = 0;
+		var title = 0;
+	
+	</script>
+
+
+	<article >
+		<div class="table_wrap">
+			<table class="viewTable">
+				<colgroup><col width="12%" /><col width="*" /></colgroup>
+				<tbody>
+				<tr>
+					<th class="need">지점명 </th>
+					<td>
+						<input type="text" class="txt2" name="" placeholder="지점명을 검색해 주세요." />
+						<span ><a class="btn gray"  href="">검색</a></span>
+
+					</td>
+				</tr>
+				<tr>
+					<th class="need">이름</th>
+					<td>
+						<input type="text" class="txt3" name="" title="매출처명을 입력해주세요." />
+					</td>
+				</tr>
+				<tr>
+					<th class="need">비밀번호</th>
+					<td>
+						<input type="password" class="txt3" name="" title="매출처명을 입력해주세요." />
+					</td>
+				</tr>
+				<tr>
+					<th class="need">전화번호</th>
+					<td>
+						<input type="text" class="txt3" name="" title="이름을 입력해주세요." />
+					</td>
+				</tr>
+				<tr>
+					<th class="need" >직급 </th>
+					<td>
+						<select style="width:272px">
+							<option value="-1"  selected="selected">직급을 선택해 주세요</option>
+							<option value=""  >지점장</option>
+							<option value=""  >매니저</option>
+							<option value=""  >아르바이트</option>
+						</select>
+						<select style="width:272px">
+							<option value="-1"  selected="selected">직급을 선택해 주세요</option>
+							<option value=""  >지점장</option>
+							<option value=""  >매니저</option>
+							<option value=""  >아르바이트</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th class="need">계약기간</th>
+					<td>
+						<input type="text" class="mfRequired txt" name="applyDate" id="idDate" style="width:200px" readonly title="적용일을 선택해 주세요."/><a href="javascript:" id="idApplyDate" class="btn_datepicker">달력</a> ~ <input type="text" class="mfRequired txt" name="applyDate" id="idDate" style="width:200px" readonly title="적용일을 선택해 주세요."/><a href="javascript:" id="idApplyDate" class="btn_datepicker">달력</a>
+					</td>
+				</tr>
+				<tr>
+					<th class="need">지급선물</th>
+					<td class="file_area">
+						<div class="file_area">
+							<a id="" href="" class="btn">찾아보기</a>&nbsp;<span>610 * 235 png 또는 jpg 이미지로 등록해주세요.</span>
+<!--
+							<ul id="" style="">
+								<li>스타벅스의 역사</li>
+							</ul>
+-->
+						</div>
+
+						<ul id="" class="images">
+						<li><img src="../admin_maker/resources/img/Starbucks-logo.png"><p><a href=""></a></p></li>
+						<li><img src="../admin_maker/resources/img/Starbucks-logo.png"><p><a href=""></a></p></li>
+						<li><img src="../admin_maker/resources/img/Starbucks-logo.png"><p><a href=""></a></p></li>
+						</ul>
+						
+					</td>
+				</tr>
+				<tr>
+					<th>메모</th>
+					<td>
+						<textarea name="termsDesc" class="mfRequired" title="내용을 입력해 주세요."></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>상태</th>
+					<td><label><input type="radio" name="viewYn" value="Y" />재직</label><label><input type="radio"  name="viewYn" value="N" />퇴사</label></td>
+				</tr>
+				<tr>
+					<th>상태</th>
+					<td><label><input type="radio" name="viewYn" value="Y" />참여</label><label><input type="radio"  name="viewYn" value="N" />불참</label><label><input type="number" id="idDayDupCount" name="dayDupCount" min="1" class="txt mfRequired" style="width: 70px;" disabled="disabled" title="1일 중복 참여 제한 횟수를 입력해 주세요."> (1일 중복 참여 제한 횟수)</label></td>
+				</tr>
+				<tr>
+					<th>좋아하는음료</th>
+					<td><label><input type="checkbox" name="" value="" />커피</label><label><input type="checkbox"  name="" value="" />오렌지쥬스</label><label><input type="checkbox"  name="" value="" />우유</label></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+		<p class="btn_c">
+			<a href="" class="green">저장</a>
+			<a href="" class="red">삭제</a>
+			<a href="" class="gray">취소</a>
+		</p>
+	</article>
+		
+</section>
+
+</section>
+<footer>
+	<address>Copyright 2017. amore All Rights Reserved.</address>
+</footer>
+
+</body>
+</html>
